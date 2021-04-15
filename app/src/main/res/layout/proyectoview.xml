@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/Imagelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/RestaurantImage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/restaurant" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/Imagelayout"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:id="@+id/restaurantName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"
+                android:textSize="17sp"
+
+                android:text="Not Available" />
+
+            <TextView
+                android:id="@+id/cucine"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/restaurantName"
+                android:textSize="10sp"
+                android:text="Not Available" />
+
+
+            <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/distance"
+            android:textAlignment="textEnd"
+            android:layout_toEndOf="@+id/restaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textSize="10sp"
+            android:text="Not Available"
+            />
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/distance"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_launcher_background"
+            app:tint="@color/colorPrimary" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

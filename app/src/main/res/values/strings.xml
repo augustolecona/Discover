@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Discover</string>
+    <string name="number_of_results">Please enter the number of results you want</string>
+</resources>
